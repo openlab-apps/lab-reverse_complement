@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from bio import Seq
+from Bio import SeqIO
 
 app = FastAPI()
 
