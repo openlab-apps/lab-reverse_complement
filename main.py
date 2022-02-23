@@ -11,7 +11,7 @@ def read_root():
 
 @app.get("/{string}")
 def read_item(string: str):
-    my_seq = Seq(string)
+    my_seq = Seq("ATATAT")
     my_revcomp = my_seq.reverse_complement()
     return {"reverse_complement": my_revcomp}
 
