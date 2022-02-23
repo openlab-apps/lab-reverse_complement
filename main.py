@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from Bio import SeqIO
+from Bio.Seq import Seq
 
 app = FastAPI()
 
@@ -11,7 +11,7 @@ def read_root():
 
 @app.get("/{string}")
 def read_item(string: str):
-    my_seq = bio.Seq(string)
+    my_seq = Seq(string)
     my_revcomp = my_seq.reverse_complement()
     return {"reverse_complement": my_revcomp}
 
