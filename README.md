@@ -1,3 +1,4 @@
+[![Docker](https://github.com/labdao/lab-revcomp/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/labdao/lab-revcomp/actions/workflows/docker-publish.yml)
 [![Deploy to Amazon ECS](https://github.com/labdao/lab-revcomp/actions/workflows/aws.yml/badge.svg)](https://github.com/labdao/lab-revcomp/actions/workflows/aws.yml)
 
 # lab-revcomp - a toy example for openlab applications
