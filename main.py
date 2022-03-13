@@ -6,7 +6,7 @@ def revcomp(string: str):
     my_revcomp = Seq("ATATAT").reverse_complement()
     return my_revcomp
 
-if __name__ == __main__:
+if __name__ == "__main__":
     revcomp(sys.argv)
 
 
