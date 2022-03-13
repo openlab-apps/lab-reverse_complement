@@ -1,16 +1,13 @@
-from fastapi import FastAPI
-from Bio.Seq import Seq
+import sys # function that is requried to read input from command line arguments
+from Bio.Seq import Seq # the package used in our example to generate a reverse complement
 
-app = FastAPI()
-
-
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
-
-
-@app.get("/{string}")
-def read_item(string: str):
+# below we define the key function
+def revcomp(string: str): 
     my_revcomp = Seq("ATATAT").reverse_complement()
-    return {"reverse_complement": my_revcomp}
+    return my_revcomp
+
+# the _main_ function called when the script is called from the command line without further specification
+def __main__:
+    return revcomp(sys.argv)
+
 
