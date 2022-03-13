@@ -6,6 +6,7 @@ Nota bene: In a production context, you would not deploy this applications using
 * Dockerfile - a file containing the commands required to install dependencies for the application.
 * main.py - a script (python, R, etc.) that is called to run the application. The script should be callable from the command line and take arguments.
 * template.json - a JSON file containing an example input. This is the object that is sent to the API once it is in production. Applications that consume data should reference example datasets that are pinned to IPFS using the object URIs.
+* .github/workflows - a directory conainting workflows used by the LabDAO to ensure continous testing of code for painfree deployment
 
 ## development process for openlab applications
 1. contribute to a repository by checking out a branch (git checkout). When contributing code, we do not work on the main branch. When working with job tickets within LabDAO's DeWork, we adhere to the following standard  user/dw-XX/name-of-the-job (for example: git checkout -b niklastr/dw-39/request-for-comments-on). 
