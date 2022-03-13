@@ -7,7 +7,7 @@ def revcomp(string: str):
     return my_revcomp
 
 # the _main_ function called when the script is called from the command line without further specification
-def __main__:
-    return revcomp(sys.argv)
+if __name__ == __main__:
+    revcomp(sys.argv)
 
 
