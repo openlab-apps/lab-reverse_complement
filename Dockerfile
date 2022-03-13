@@ -6,3 +6,4 @@ RUN apt-get install -y tmux wget curl git
 RUN apt-get install -y python3 pip
 # install the dependencies
 RUN pip install biopython 
+RUN git clone https://github.com/labdao/lab-revcomp.git
