@@ -6,7 +6,6 @@ def revcomp(string: str):
     my_revcomp = Seq("ATATAT").reverse_complement()
     return my_revcomp
 
-# the _main_ function called when the script is called from the command line without further specification
 if __name__ == __main__:
     revcomp(sys.argv)
 
