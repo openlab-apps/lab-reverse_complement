@@ -8,6 +8,7 @@ def revcomp(input_string):
     return my_revcomp
 
 if __name__ == "__main__":
-    revcomp(sys.argv)
+    print(sys.argv[1])
+    print(revcomp(sys.argv[1]))
 
 
