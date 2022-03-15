@@ -7,4 +7,4 @@ This is a tutorial repository that takes you from a simple script all the way to
 4. the workflow stage
 5. the core application stage 
 
-Right now you are at a *branch* of the repository that is representing the *script stage*. You can switch between stages using the dropdown menu on the top left on [GitHub](https://github.com/labdao/lab-reverse_complement) or by calling ''' git switch'''. 
+Right now you are at a *branch* of the repository that is representing the *script stage*. You can switch between stages using the dropdown menu on the top left on [GitHub](https://github.com/labdao/lab-reverse_complement) or by calling *git switch*. 
