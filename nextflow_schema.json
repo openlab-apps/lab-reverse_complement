@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "https://raw.githubusercontent.com/nf-core/revcomp/master/nextflow_schema.json",
     "title": "nf-core/revcomp pipeline parameters",
-    "description": "generates a reverse complement",
+    "description": "reverse complement",
     "type": "object",
     "definitions": {
         "input_output_options": {
