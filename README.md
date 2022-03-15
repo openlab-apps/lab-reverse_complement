@@ -18,3 +18,9 @@ Congratulations, you likely just recently learned how to write code (for example
 * main.py - this is the script in which your application lives in; right now it is a biopython function that takes an input that is defined in the script
 * a .gitignore file and other git related files - this file helps keep your [git](https://lab.github.com/githubtraining/introduction-to-github) repository clean
 
+## what is wrong with the script stage?
+The script stage is ok if you are trying to have a very quick fix for your development needs. However, you will quickly run into trouble if you are trying to share this application with a collegue or your future self: 
+* it is hard to change the input to the application and generate the reverse complement for another sequence
+
+## how to move to the command line stage?
+Let's take this script and break the code down into a function and introduce a method to read input from the command line.
