@@ -1,6 +1,6 @@
 # A tutorial openlab application to generate a reverse complement
 
-**DISCLAIMER: This repository is still under development - getting a workflow to adhere to nf-core standards is not that straight forward :) **
+**DISCLAIMER: This repository is still under development - getting a workflow to adhere to nf-core standards is not that straight forward**
 
 [![Follow on Twitter](http://img.shields.io/badge/twitter-%40lab_dao-1DA1F2?labelColor=000000&logo=twitter)](https://twitter.com/lab_dao)
 
