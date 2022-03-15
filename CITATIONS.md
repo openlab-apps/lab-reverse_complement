@@ -1,8 +1,8 @@
 # lab-revcomp: Citations
-## Tools
+## algorithms
 * citations to tools you are using
 
-## Software workflow/packaging/containerisation tools
+## workflow/packaging/containerisation tools
 
 * [nf-core](https://pubmed.ncbi.nlm.nih.gov/32055031/)
     > Ewels PA, Peltzer A, Fillinger S, Patel H, Alneberg J, Wilm A, Garcia MU, Di Tommaso P, Nahnsen S. The nf-core framework for community-curated bioinformatics pipelines. Nat Biotechnol. 2020 Mar;38(3):276-278. doi: 10.1038/s41587-020-0439-x. PubMed PMID: 32055031.
@@ -19,7 +19,7 @@
 * [BioContainers](https://pubmed.ncbi.nlm.nih.gov/28379341/)
     > da Veiga Leprevost F, Grüning B, Aflitos SA, Röst HL, Uszkoreit J, Barsnes H, Vaudel M, Moreno P, Gatto L, Weber J, Bai M, Jimenez RC, Sachsenberg T, Pfeuffer J, Alvarez RV, Griss J, Nesvizhskii AI, Perez-Riverol Y. BioContainers: an open-source and community-driven framework for software standardization. Bioinformatics. 2017 Aug 15;33(16):2580-2582. doi: 10.1093/bioinformatics/btx192. PubMed PMID: 28379341; PubMed Central PMCID: PMC5870671.
 
-* [Docker](https://dl.acm.org/doi/10.5555/2600239.2600241)
-
 * [Singularity](https://pubmed.ncbi.nlm.nih.gov/28494014/)
     > Kurtzer GM, Sochat V, Bauer MW. Singularity: Scientific containers for mobility of compute. PLoS One. 2017 May 11;12(5):e0177459. doi: 10.1371/journal.pone.0177459. eCollection 2017. PubMed PMID: 28494014; PubMed Central PMCID: PMC5426675.
+
+* [Docker](https://dl.acm.org/doi/10.5555/2600239.2600241)
