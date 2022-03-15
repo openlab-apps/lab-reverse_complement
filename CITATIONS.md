@@ -1,6 +1,6 @@
 # lab-revcomp: Citations
 ## algorithms
-* citations to tools you are using
+* citations for tools you are using
 
 ## workflow/packaging/containerisation tools
 
