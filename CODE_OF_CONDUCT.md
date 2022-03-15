@@ -33,7 +33,7 @@ All reports will be handled with utmost discretion and confidentially.
 
 ## Attribution and Acknowledgements
 
-- The [nf-core code of conduct](https://nf-co.re/code_of_conduct)
+- The [nf-core Code of Conduct](https://nf-co.re/code_of_conduct)
 - The [Contributor Covenant, version 1.4](http://contributor-covenant.org/version/1/4)
 - The [OpenCon 2017 Code of Conduct](http://www.opencon2017.org/code_of_conduct) (CC BY 4.0 OpenCon organisers, SPARC and Right to Research Coalition)
 - The [eLife innovation sprint 2020 Code of Conduct](https://sprint.elifesciences.org/code-of-conduct/)
@@ -42,4 +42,4 @@ All reports will be handled with utmost discretion and confidentially.
 ## Changelog
 
 ### v1.0 - March 15th, 2022
-- Simplification and heavy adaption of [nf-core code of conduct](https://nf-co.re/code_of_conduct)
+- Simplification and heavy adaption of [nf-core Code of Conduct](https://nf-co.re/code_of_conduct)
