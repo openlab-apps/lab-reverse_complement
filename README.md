@@ -1,4 +1,4 @@
-# A tutorial openlab application to generate a reverse complement
+# A tutorial openlab application to generate a reverse complement sequence
 
 **DISCLAIMER: This repository is still under development - getting a workflow to adhere to nf-core standards is not that straight forward**
 
