@@ -13,4 +13,4 @@ RUN pip install -r /usr/src/app/requirements.txt
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 # run the server
-CMD ["uvicorn", "server.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
