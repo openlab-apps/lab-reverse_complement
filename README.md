@@ -1,19 +1,31 @@
+# A tutorial openlab application to generate a reverse complement sequence
+This is a tutorial repository that takes you from a simple script all the way to a point where your scientific application can run in an openlab production environment at scale. We believe that everyone should be able to use *and* contribute to openlab. This repository is taking you through different stages of appication maturity and can serve as a starting point to identify areas of improvement for application development. 
 
+## stages of application maturity
+At LabDAO we think about the maturity of a code repository in five (+1) stages of maturity: 
 
-# lab-revcomp - a toy example for openlab applications
-Wrapping your first application for openlab might seem like a daunting task if this is your first time reading about docker, kubernetes and other concepts. This repository is a minimal example for a tool that is available through openlab. This container contains a minimal application that returns the reverse complement of an input nucleotide sequence. 
-Nota bene: In a production context, you would not deploy this applications using a container, but instead use serverless tools.
+0. the script stage 
+1. the command line stage (you are here)
+2. *the container stage*
+3. the compose stage
+4. the workflow stage
+5. the core application stage 
 
-## basic elements of every lab-repository
-* Dockerfile - a file containing the commands required to install dependencies for the application.
-* main.py - a script (python, R, etc.) that is called to run the application. The script should be callable from the command line and take arguments.
-* template.json - a JSON file containing an example input. This is the object that is sent to the API once it is in production. Applications that consume data should reference example datasets that are pinned to IPFS using the object URIs.
+Right now you are at a *branch* of the repository that is representing the *command line stage*. You can switch between stages using the dropdown menu on the top left on [GitHub](https://github.com/labdao/lab-reverse_complement) or by calling *git switch* on your command line.
+
+## the container stage
+Your repository consists of the basic script, main.py, but can now consume input from the command line. In a production context, you would not deploy this applications using a container, but instead use serverless tools.
+* main.py - this is the script in which your application lives in; right now it is a biopython function that takes an input that is defined in the script
+* a .gitignore file and other git related files - this file helps keep your [git](https://lab.github.com/githubtraining/introduction-to-github) repository clean
+* Dockerfile - a file containing the commands required to install dependencies for the application
 * .github/workflows - a directory conainting workflows used by the LabDAO to ensure continous testing of code for painfree deployment
 
-## development process for openlab applications
-1. contribute to a repository by checking out a branch (git checkout). When contributing code, we do not work on the main branch. When working with job tickets within LabDAO's DeWork, we adhere to the following standard  user/dw-XX/name-of-the-job (for example: git checkout -b niklastr/dw-39/request-for-comments-on). 
-2. open a pull request after making your changes to the application. A core or contributing community member will review your pull request. 
-3. we use continous integration tools to ensure the quality of our services. Applications (repositories starting with "lab-"), automatically build a docker container which can be accessed from github (for example: https://github.com/labdao/lab-equibind/pkgs/container/lab-equibind). We recommend using containers with the tag "main".  
-4. once application containers are available openlab nodes can pull these containers and offer the packaged applications to the community. We have at least one reference implementation of applications running on LabDAO controlled cloud compute infrastructure. While we give nodes complete freedom how they offer applications to the community, we plan to publish best practice instructions in the near future. 
-5. in case applications offered by a provider give unexpected results, potential conflicts are resolved by using the reference implementation hosted by LabDAO.
+## what is wrong with the container stage?
+The command line stage can help you call the application you have build on your local hardware, but you will likely run into problems when you want to share your application with a collegue or your future self: 
+* the application's dependencies are not well defined. Running the script on a different machine will likely not work, as biopython is not installed
+
+## how to move to the compose stage?
+We recommend using docker to containerize your application. While other tools to control dependencies exist (e.g. conda), they still require manual tweaking when moving between operating systems (e.g. from Mac to Linux) and are not as deeply integrated with orchestration/workflow tools such as Kubernetes and Nextflow that are commonly used in production. The basic piece we add to the repository is a Dockerfile and a github action that automatically produces a docker container. Move to the 2-container-stage branch to see this in action.
+
+
 
