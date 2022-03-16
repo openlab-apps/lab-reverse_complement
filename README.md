@@ -18,6 +18,11 @@ Your repository consists of the basic script, main.py, but can now consume input
 * main.py - this is the script in which your application lives in; right now it is a biopython function that takes an input that is defined in the script
 * a .gitignore file and other git related files - this file helps keep your [git](https://lab.github.com/githubtraining/introduction-to-github) repository clean
 
+## using your application
+to run your application at this stage, you open your command line and run: 
+
+python main.py TTAAATATAA
+
 ## what is wrong with the command line stage?
 The command line stage can help you call the application you have build on your local hardware, but you will likely run into problems when you want to share your application with a collegue or your future self: 
 * the application's dependencies are not well defined. Running the script on a different machine will likely not work, as biopython is not installed
