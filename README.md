@@ -15,17 +15,16 @@ Right now you are at a *branch* of the repository that is representing the *comm
 
 ## the container stage
 Your repository consists of the basic script, main.py, but can now consume input from the command line. In a production context, you would not deploy this applications using a container, but instead use serverless tools.
-* main.py - this is the script in which your application lives in; right now it is a biopython function that takes an input that is defined in the script
+* main.py - this is the script in which your application lives in; right now it is a biopython function that takes an input from the command line
 * a .gitignore file and other git related files - this file helps keep your [git](https://lab.github.com/githubtraining/introduction-to-github) repository clean
-* Dockerfile - a file containing the commands required to install dependencies for the application
-* .github/workflows - a directory conainting workflows used by the LabDAO to ensure continous testing of code for painfree deployment
+* Dockerfile - a file containing the commands required to install dependencies for the application. You can think of docker as a lightweight virtual machine.
+* .github/workflows - a directory conainting workflows to ensure continous testing of code for painfree deployment
 
 ## what is wrong with the container stage?
-The command line stage can help you call the application you have build on your local hardware, but you will likely run into problems when you want to share your application with a collegue or your future self: 
-* the application's dependencies are not well defined. Running the script on a different machine will likely not work, as biopython is not installed
+The container stage can help you share your application with a collegue or your future self. However, you will quickly recognize that containers themselves are not sufficient if you want to tell users *how* to run the container. This is especially relevant when you plan to run applications in using multiple containers.
 
 ## how to move to the compose stage?
-We recommend using docker to containerize your application. While other tools to control dependencies exist (e.g. conda), they still require manual tweaking when moving between operating systems (e.g. from Mac to Linux) and are not as deeply integrated with orchestration/workflow tools such as Kubernetes and Nextflow that are commonly used in production. The basic piece we add to the repository is a Dockerfile and a github action that automatically produces a docker container. Move to the 2-container-stage branch to see this in action.
+We now add a docker-compose.yml to our repository. A docker-compose file defines a lot of the parameters that you would usually pass to the command line when you run *docker run*, such as the port the container should listen to and the volumes it should mount to interact with input and output data.
 
 
 
