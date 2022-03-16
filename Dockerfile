@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt-get install -y tmux wget curl git nano
 RUN apt-get install -y python3 pip
 # install the dependencies
-RUN pip install biopython 
+RUN pip install -r requirements.txt 
 # copy the current repository to the container and store it at /usr/src/app - you can learn more about this convention here: https://en.wikipedia.org/wiki/Unix_filesystem#Conventional_directory_layout
 COPY . /usr/src/app
 # open a shell when launching the container
