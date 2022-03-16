@@ -6,5 +6,7 @@ RUN apt-get install -y tmux wget curl git nano
 RUN apt-get install -y python3 pip
 # install the dependencies
 RUN pip install biopython 
-RUN git clone https://github.com/labdao/lab-revcomp.git
+# add the current repository to the container
+COPY .
+# open a shell when launching the container
 CMD ["bash"]
