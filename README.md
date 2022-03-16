@@ -13,33 +13,40 @@ At LabDAO we think about the maturity of a code repository in five (+1) stages o
 
 Right now you are at a *branch* of the repository that is representing the *command line stage*. You can switch between stages using the dropdown menu on the top left on [GitHub](https://github.com/labdao/lab-reverse_complement) or by calling *git switch* on your command line.
 
-## the container stage
+## the compose stage
 Your repository consists of the following files: 
-* main.py - this is the script in which your application lives in; right now it is a biopython function that takes an input from the command line
-* a .gitignore file and other git related files - this file helps keep your [git](https://lab.github.com/githubtraining/introduction-to-github) repository clean
+* main.py - this is the script in which your application lives in; we changed the code and now expose an API that listens to input on a user-defined port
 * Dockerfile - a file containing the commands required to install dependencies for the application. You can think of docker as a lightweight virtual machine.
-* docker-compose.yml
+* requirements.txt - a list of dependencies (here python dependencies) that is being read when the docker container is build
+* docker-compose.yml - a file describing additional parameters you would usually pass to *docker run*, including ports and where to build the container from
+* .gitignore file and other git related files - this file helps keep your [git](https://lab.github.com/githubtraining/introduction-to-github) repository clean
+
 
 ## using your application
-You can build the container by calling *docker build*:
+Next to introducing a docker-compose.yml, we added important changes to main.py. In the previous stage the script was called from the command line to generate the reverse complement. Now we have used the [FastAPI](https://fastapi.tiangolo.com/tutorial/first-steps/) package to build a simple API around our revcomp function. Moving from receiving arguments from the command line to receiving them via an API comes with many benefits: 
+* APIs can come with automatic documentations about their usage 
+* APIs can help run complex, composable applications, where multiple containers have to be talking to one another in a structured way
 
+You can build the container and run it in one go by calling *docker compose up*:
 ```
-# build the container and name it; notice that the username will be different
-docker build ../lab-reverse_complement -t niklastr/lab-reverse_complement:container
-```
-Instead of using *docker run* we have defined our docker-compose.yml file and run it using :
-```
-# launch the container in interactive mode
-docker run -it -d niklastr/lab-reverse_complement:container
-# within the container (notice the change of your shell) you can call your application
-python3 /usr/src/app/main.py TATAAATA
+# navigate to the directory
+docker compose up
 ```
 
-## what is wrong with the container stage?
-The container stage can help you share your application with a collegue or your future self. However, you will quickly recognize that containers themselves are not sufficient if you want to tell users *how* to run the container. This is especially relevant when you plan to run applications in using multiple containers.
+You can now open your browser at 0.0.0.0:80 or open your command line:
+```
+# connect with the server you are running
+curl http://0.0.0.0/ATTAAATAAAAAA
+# {"reverse_complement":"TTTTTTATTTAAT"}%      
+```
 
-## how to move to the compose stage?
-We now add a docker-compose.yml to our repository. A docker-compose file defines a lot of the parameters that you would usually pass to the command line when you run *docker run*, such as the port the container should listen to and the volumes it should mount to interact with input and output data.
+Another nice thing about getting your application into this stage is the ability to quickly iterate on your code. While docker compose is running changes to the code are directly build and deployed.
+
+## what is missing with the compose stage?
+The compose stage can help you share your application with a collegue or your future self with little added information about *how* to use the container. However, the current application does not include any constraints on expected inputs and outputs. In addition, running more complex applications that generate a lot of intermediary states can become chaotic quickly. It is time for workflow descriptors.
+
+## how to move to the workflow stage?
+We use our containerized application and we embed it into a workflow. A workflow is a series of computational steps that are executed one after another in a stateful way. Workflows are especially relevant for complex applications - you would never use a workflow to only do reverse complement for a single sequence, but you might use it to calculate the reverse complement of million sequences that are directly moved to a second computational step. 
 
 ## where can I learn more? 
 * [FastAPI and docker](https://fastapi.tiangolo.com/deployment/docker/#what-is-a-container)
