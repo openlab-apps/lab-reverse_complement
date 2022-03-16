@@ -1,5 +1,4 @@
-[![Docker](https://github.com/labdao/lab-reverse_complement/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/labdao/lab-reverse_complement/actions/workflows/docker-publish.yml)
-[![Deploy to Amazon ECS](https://github.com/labdao/lab-reverse_complement/actions/workflows/aws.yml/badge.svg)](https://github.com/labdao/lab-reverse_complement/actions/workflows/aws.yml)
+
 
 # lab-revcomp - a toy example for openlab applications
 Wrapping your first application for openlab might seem like a daunting task if this is your first time reading about docker, kubernetes and other concepts. This repository is a minimal example for a tool that is available through openlab. This container contains a minimal application that returns the reverse complement of an input nucleotide sequence. 
