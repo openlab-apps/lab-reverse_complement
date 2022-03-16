@@ -22,10 +22,14 @@ Your repository consists of the basic script, main.py, but can now consume input
 
 ## using your application
 You can build the container by calling *docker build*:
+
 docker build ../lab-reverse_complement -t niklastr/lab-reverse_complement:container
 
 You can run the application using *docker run*:
+
 docker run -it -d niklastr/lab-reverse_complement:container
+python3 /usr/src/app/main.py TATAAATA
+
 
 ## what is wrong with the container stage?
 The container stage can help you share your application with a collegue or your future self. However, you will quickly recognize that containers themselves are not sufficient if you want to tell users *how* to run the container. This is especially relevant when you plan to run applications in using multiple containers.
