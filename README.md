@@ -42,6 +42,7 @@ The container stage can help you share your application with a collegue or your 
 We now add a docker-compose.yml to our repository. A docker-compose file defines a lot of the parameters that you would usually pass to the command line when you run *docker run*, such as the port the container should listen to and the volumes it should mount to interact with input and output data.
 
 ## where can I learn more? 
-* [docker compose documentation](https://docs.docker.com/compose/)
+* [FastAPI and docker](https://fastapi.tiangolo.com/deployment/docker/#what-is-a-container)
 * [docker compose in 12 minutes](https://www.youtube.com/watch?v=Qw9zlE3t8Ko)
+* [official docker compose documentation](https://docs.docker.com/compose/)
 
