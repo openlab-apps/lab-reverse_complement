@@ -5,8 +5,8 @@ This is a tutorial repository that takes you from a simple script all the way to
 At LabDAO we think about the maturity of a code repository in five (+1) stages of maturity: 
 
 0. the script stage 
-1. the command line stage (you are here)
-2. *the container stage*
+1. the command line stage 
+2. *the container stage* (you are here)
 3. the compose stage
 4. the workflow stage
 5. the core application stage 
