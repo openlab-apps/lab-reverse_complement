@@ -1,0 +1,1 @@
+{"id":"8c684832-4144-47e9-b129-c58e9d2346c4","space":8177,"runtime":"python3.9","name":"lab-reverse_complement","path":"02wun6","project":"a0jb0eck","account":"144798365827","region":"eu-central-1","deps":["biopython","fastapi"],"envs":null,"public":true,"log_level":"debug","cron":""}
