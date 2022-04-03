@@ -6,7 +6,8 @@ At LabDAO we think about the maturity of a code repository in five (+1) stages o
 
 0. the script stage 
 1. the command line stage 
-2. *the container stage* (you are here)
+2. the container stage 
+2. **the serverless stage** (you are here)
 3. the compose stage
 4. the workflow stage
 5. the core application stage 
@@ -19,6 +20,9 @@ Your repository consists of the basic script, main.py, but can now consume input
 * a .gitignore file and other git related files - this file helps keep your [git](https://lab.github.com/githubtraining/introduction-to-github) repository clean
 * Dockerfile - a file containing the commands required to install dependencies for the application. You can think of docker as a lightweight virtual machine.
 * .github/workflows - a directory conainting workflows to ensure continous testing of code for painfree deployment
+
+https://fastapi.tiangolo.com/deployment/deta/
+
 
 ## using your application
 You can build the container by calling *docker build*:
