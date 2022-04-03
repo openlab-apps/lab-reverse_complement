@@ -1,4 +1,0 @@
-2022-03-17 18:28:15	2.6s	spontaneous_carlsson	OK	2d5d0e95e255f0e20d461026bfd1a951	7aed2033-de50-4a01-9742-8f3a9e1b6f89	nextflow demo.nf
-2022-03-17 18:31:55	2.6s	mighty_fermat	ERR	2737e1f908c37775249846f7ef61a075	916f30a8-9bfb-4a81-9481-b484a4ba2d12	nextflow demo.nf
-2022-03-17 18:32:19	2.4s	gigantic_curran	OK	4cc95720d7de5cd987c8fe068e4ffc17	04ec65e0-64b9-40f1-9b1d-ba0899d2604d	nextflow demo.nf
-2022-03-17 18:34:17	2.3s	confident_kalam	OK	4cc95720d7de5cd987c8fe068e4ffc17	40690ba5-d444-430e-9080-75bc22da3e02	nextflow demo.nf
