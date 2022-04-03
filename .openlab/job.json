@@ -1,6 +1,6 @@
 {
     "service": 0,
-    "service_name": "reverse complement",
+    "service_name": "lab-reverse_complement",
     "input":{
         "sequence_dna": "ctatataaataaataaataaatattatatatatag"
     }
