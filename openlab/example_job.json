@@ -1,7 +1,19 @@
 {
-    "service": 0,
-    "service_name": "lab-reverse_complement",
-    "input":{
-        "sequence": "ctatataaataaataaataaatattatatatatag"
-    }
+    "name": "openlab reverse complement",
+    "description": "the reverse complement to an input DNA sequence",
+    "image": "https://ipfs.io/ipfs/QmZ9oReVUiNQSc9GaqqTEPUW3XHo6eprVSa9nqbGNotP8B",
+    "attributes": [
+        {
+            "trait_type": "Service ID",
+            "value": "0"
+        },
+        {
+            "trait_type": "Service Name",
+            "value": "lab-reverse_complement"
+        },
+        {
+            "trait_type": "Input Sequence",
+            "value": "ctatataaataaataaataaatattatatatatag"
+        }
+    ]
 }

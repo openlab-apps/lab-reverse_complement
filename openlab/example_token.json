@@ -1,18 +1,35 @@
 {
-    "service": 0,
-    "service_name": "lab-reverse_complement",
-    "input":{
-        "sequence": "ctatataaataaataaataaatattatatatatag"
-    },
-    "output":{
-        "sequence": "ctatatatataatatttatttatttatttatatag"
-    },
-    "metadata":{
-        "repository": "https://github.com/openlab-apps/lab-reverse_complement/tree/2-serverless-stage",
-        "commit": "ddf80e0e953fde3d8cbe9f17fc3f1108cac7bc37",
-        "deployment": "https://02wun6.deta.dev/"
-    },
-    "job_uri": "ipfs/QmdQP9D44Hgp8697FpGJrkTiQYSiUH3xEsvumKX3jJmV58",
-    "whywearedoingthis": "11th, April 2018: Goldman Sachs asks in biotech research report: 'Is curing patients a sustainable business model?'",
-    "image": "https://gateway.pinata.cloud/ipfs/QmZ9oReVUiNQSc9GaqqTEPUW3XHo6eprVSa9nqbGNotP8B"
+    "name": "openlab reverse complement",
+    "description": "the reverse complement to an input DNA sequence",
+    "image": "https://ipfs.io/ipfs/QmZ9oReVUiNQSc9GaqqTEPUW3XHo6eprVSa9nqbGNotP8B",
+    "attributes": [
+        {
+            "trait_type": "Service ID",
+            "value": "0"
+        },
+        {
+            "trait_type": "Service Name",
+            "value": "lab-reverse_complement"
+        },
+        {
+            "trait_type": "Input Sequence",
+            "value": "ctatataaataaataaataaatattatatatatag"
+        },
+        {
+            "trait_type": "Output Sequence",
+            "value": "ctatatatataatatttatttatttatttatatag"
+        },
+        {
+            "trait_type": "Metadata",
+            "value": {
+                "repository": "https://github.com/openlab-apps/lab-reverse_complement/tree/2-serverless-stage",
+                "commit": "ddf80e0e953fde3d8cbe9f17fc3f1108cac7bc37",
+                "deployment": "https://02wun6.deta.dev/"
+            }
+        },
+        {
+            "trait_type": "Job URI",
+            "value": "ipfs://QmdQP9D44Hgp8697FpGJrkTiQYSiUH3xEsvumKX3jJmV58"
+        }
+    ]
 }
